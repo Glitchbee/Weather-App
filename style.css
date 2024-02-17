@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'popins', sans-serif;
+    background: url(./asset/Images/Bg-img.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+img {
+    width: 150px;
+}
+
+.status-img {
+    width: 50px;
+}
+
+h1 {
+    margin: 5px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+
+
+.container {
+    width: 40%;
+    max-width: 1120px;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    width: 340px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #ffffffe0;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 15px;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #ffffffe0;
+    border-radius: 10px;
+    padding: .5em .8em;
+}
+
+.search .btn img {
+    width: 35px;
+}
+
+.weather h2 {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 15px 0;
+
+}
+
+.details {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details div {
+    color: rgb(83, 81, 81);
+    font-weight: 500;
+    margin-left: .8em;
+    line-height: 1.2;
+}
+
+.humid,
+.wind-speed {
+    font-size: 2rem;
+}
+
+
+.weather-result-img {
+    animation: ani 1s ease-in-out infinite alternate;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    display: none;
+    color: rgba(255, 0, 0, 0.856);
+    text-align: left;
+    font-size: 1.3rem;
+    margin-left: 4em;
+    padding: .5em 0;
+    position: relative;
+    bottom: 25px;
+}
+
+@keyframes ani {
+    100% {
+        transform: translateY(10px);
+    }
+}

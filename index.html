@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <input onkeydown="keyPress(event)"type="text" placeholder="Enter city name" />
+            <button class="btn"><img src="./asset/Images/search.png" alt="search-btn" /> </button>
+        </div>
+
+        <div class="error">Invalid city name</div>
+
+        <div class="weather">
+            <img class="weather-result-img" src="./asset/Images/clouds.png" alt="weather-img" />
+            <h1 class="temp">32°C</h1>
+            <h2 class="city">Ranipet</h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="./asset/Images/humidity.png" class="status-img" alt="info-img" />
+                    <div>
+                        <p class="humid">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <img src="./asset/Images/wind.png" class="status-img" alt="info-img" />
+                    <div>
+                        <p class="wind-speed">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
